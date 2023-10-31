@@ -23,7 +23,7 @@
             </field>
         </record>
         
-        <record id="action_wizard_invoice_customer_rcv" model="ir.actions.act_window">
+        <record id="action_wizard_invoice_customer_rcv_csv" model="ir.actions.act_window">
             <field name="name">Importar Registro de compra y venta</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">invoice.rcv.wizard</field>
@@ -32,6 +32,6 @@
             <field name="target">new</field>
         </record>
 
-        <menuitem id="import_invoice_file_rcv" name="Importar RCV" action="action_wizard_invoice_customer_rcv" parent="account.menu_finance_payables"/>
+        <menuitem id="import_invoice_file_rcv" name="Importar RCV desde CSV" action="action_wizard_invoice_customer_rcv_csv" parent="account.menu_finance_payables"/>
   </data>
 </odoo>
