@@ -167,7 +167,6 @@ class Invoice_wizard(models.TransientModel):
 #Referencia si es nota de crédito o nota de débito
             referencia=[]
             if linea[1] in('61','56'):
-                breakpoint()
                 domain=[
                         ('sii_document_number','=',linea[25]),
                         ('partner_id','=',partner_id.id)
