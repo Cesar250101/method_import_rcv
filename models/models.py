@@ -217,4 +217,5 @@ class Invoice_wizard(models.TransientModel):
                 invoice_var = invoice_obj.create(factura)
                 journal_id.restore_mode=True
                 invoice_var.action_invoice_open()
+            journal_id.restore_mode=False
         return True
